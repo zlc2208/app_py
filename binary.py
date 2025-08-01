@@ -49,3 +49,4 @@ if __name__ == "__main__":
     sys_output = int(input("Enter the output number system (2-10): "))
     result = numsystem_convert(number_input, sys_input, sys_output)
     print(f"Converted number: {result}")
+    a = input("Press Enter to exit...")
