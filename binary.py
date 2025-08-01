@@ -10,7 +10,7 @@ def numsystem_convert(number_input="0", sys_input=10, sys_output=2):
         decimal = decimal_input
         num_output = {}
         i = 0
-        print("processing:")
+        print("processing:\nchoice: digit decimal_remained num_converted")
         while True:
             if decimal - sys_output**i > 0:
                 i += 1
@@ -22,7 +22,7 @@ def numsystem_convert(number_input="0", sys_input=10, sys_output=2):
                 else:
                     num_output[i - 1] = decimal // sys_output ** (i - 1)
                     decimal -= num_output[i - 1] * sys_output ** (i - 1)
-                    print("2:", i, decimal, num_output)
+                    print("2:", i - 1, decimal, num_output)
                     if decimal == 0:
                         break
                     i = 0
